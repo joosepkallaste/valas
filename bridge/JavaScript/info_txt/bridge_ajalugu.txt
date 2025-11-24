@@ -1,0 +1,15 @@
+# class="sektsioon__pealkiri" Algus: Whist → Biritch
+p class="sektsioon__tekst" Bridge’i juured on 18.–19. sajandi ||whistis||.
+p class="sektsioon__tekst" 1800. lõpul levis sellele eelkäija ||biritch||, kus tekkisid trumbimasti ja lepingu idee varased vormid.
+
+# class="sektsioon__pealkiri" Auction Bridge (u 1900–1925)
+p class="sektsioon__tekst" 20. sajandi alguses lisandus ||oksjon|| – paarid pakkusid tihide arvu ja trumbi. Reeglid ei olnud veel ühtsed, kuid mängu põhistruktuur kujunes välja.
+
+# class="sektsioon__pealkiri" Contract Bridge (alates 1925)
+p class="sektsioon__tekst" Harold S. ||Vanderbilt|| muutis 1925. aastal reegleid: leping loeb ainult siis, kui see täidetakse; lisandusid ||vulnerability|| ja uus punktisüsteem. Sellest sai kiiresti bridge’i ametlik vorm.
+
+# class="sektsioon__pealkiri" Duplikaatbridge ja organisatsioonid
+p class="sektsioon__tekst" ||Duplicate bridge|| (samade jagude mängimine eri laudkondades) muutis mängu oskuspõhisemaks. 1930.–1950. rajati rahvuslikud liidud; 1958 loodi ||World Bridge Federation||.
+
+# class="sektsioon__pealkiri" Täna
+p class="sektsioon__tekst" Bridge’i mängitakse klubides ja online’s; see on strateegiline ja partnerlussuhteid nõudev mäng, mille tuum – ||pakkumine, tihid ja koostöö|| – on püsinud muutumatuna.

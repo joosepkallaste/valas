@@ -5,81 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Avasta Bridge – esileht</title>
   <link rel="stylesheet" href="tutvustav_page.css">
+  <script src="JavaScript/functions.js"></script>
 </head>
+
 <body class="leht leht--avaleht">
   <div class="page">
-  <div class="card">
-    <header class="pais">
-      <h1 class="pais__pealkiri">Avasta Bridge — nutikas ja seltskondlik kaardimäng</h1>
-      <p class="pais__alampealkiri">Õpi mõtlema nagu tiim, naudi pingelist duelli ja leia uusi sõpru. Bridge on kombinatsioon loogikast, koostööst ja heast tujust.</p>
-      <p class="pais__kutse">Proovi demot · Liitu klubiga · Vaata üritusi</p>
-    </header>
+    <div class="card">
 
-    <div class="sektsioon sektsioon--miks">
-      <h2 class="sektsioon__pealkiri">Miks proovida?</h2>
-      <ul class="nimekiri nimekiri--punktid">
-        <li><strong>Arendab mõtlemist:</strong> loogika, tõenäosused ja meeskonnatöö.</li>
-        <li><strong>Seltskondlik:</strong> leiad kiirelt uue mängukaaslase.</li>
-        <li><strong>Võistlusmoment:</strong> turniirid ja reitingud soovijatele.</li>
-      </ul>
+      <!-- Header + pais -->
+      <header class="pais" id="header">
+        <h1 class="pais__pealkiri">Avasta Bridge — nutikas ja seltskondlik kaardimäng</h1>
+        <p class="pais__alampealkiri">Õpi mõtlema nagu tiim, naudi pingelist duelli ja leia uusi sõpru. Bridge on kombinatsioon loogikast, koostööst ja heast tujust.</p>
+        <p class="pais__kutse">Proovi demot · Liitu klubiga · Vaata üritusi</p>
+      </header>
+
+      <!-- Sektsioonid, mis täidetakse TXT failist -->
+      <div class="sektsioon sektsioon--miks" id="miks_proovida"></div>
+
+      <div class="sektsioon sektsioon--uritused" id="uritused"></div>
+
+      <div class="sektsioon sektsioon--demo" id="demo"></div>
+
+      <div class="sektsioon sektsioon--partner" id="partner"></div>
+
+      <div class="sektsioon sektsioon--tagasiside" id="tagasiside"></div>
+
+      <div class="sektsioon sektsioon--kkk" id="kkk"></div>
+
+      <div class="sektsioon sektsioon--reeglid" id="reeglid">
+        <p class="sektsioon__tekst">Soovid teada, kuidas mäng täpselt käib? Ava reeglite leht:
+          <form action="./bridge_reeglid.html" method="get" class="nupp-vorm">
+            <button class="nupp nupp--reeglid" type="submit">Bridge’i reeglid</button>
+          </form>
+        </p>
+      </div>
+
+      <div class="sektsioon sektsioon--ajalugu" id="ajalugu">
+        <h2 class="sektsioon__pealkiri">Kust Bridge tuli?</h2>
+        <p class="sektsioon__tekst">Vaata, kuidas whistist sai tänapäeva contract bridge:
+          <form action="./bridge_ajalugu.html" method="get" class="nupp-vorm">
+            <button class="nupp nupp--ajalugu" type="submit">Bridge’i lühiajalugu</button>
+          </form>
+        </p>
+      </div>
+
     </div>
-
-    <div class="sektsioon sektsioon--uritused">
-      <h2 class="sektsioon__pealkiri">Tulekul üritused</h2>
-      <ul class="nimekiri nimekiri--uritused">
-        <li><strong>Algajate õhtu (kolmapäeviti)</strong> – 90 min harjutusi ja mini-turniir. Tartu &amp; Tallinn.</li>
-        <li><strong>Kohvi &amp; Kaardid (pühapäeviti)</strong> – vaba formaat, tule üksi või sõbraga.</li>
-      </ul>
-      <p class="sektsioon__markus">Vaata kalendrit või registreeru.</p>
-    </div>
-
-    <div class="sektsioon sektsioon--demo">
-      <h2 class="sektsioon__pealkiri">Proovi kohe brauseris</h2>
-      <p class="sektsioon__tekst">Kiire interaktiivne demo, mis tutvustab mängu kulgu. Sobib esimeseks kogemuseks.</p>
-      <p class="sektsioon__kutse">Alusta demot</p>
-    </div>
-
-    <div class="sektsioon sektsioon--partner">
-      <h2 class="sektsioon__pealkiri">Leia partner</h2>
-      <p class="sektsioon__tekst">Jäta oma nimi ja tase – viime sind kokku samal tasemel mängijaga.</p>
-      <p class="sektsioon__kutse">Täida lühivorm</p>
-    </div>
-
-    <div class="sektsioon sektsioon--tagasiside">
-      <h2 class="sektsioon__pealkiri">Mida teised ütlevad</h2>
-      <ul class="nimekiri nimekiri--tsitaadid">
-        <li>“Iga käsi on nagu väike mõistatus.” — Laura, tudeng</li>
-        <li>“Tulin üksi, lahkusin partneriga.” — Martin, harrastaja</li>
-        <li>“Parim viis argipäevast välja lülituda.” — Kadi, algaja</li>
-      </ul>
-    </div>
-
-    <div class="sektsioon sektsioon--kkk">
-      <h2 class="sektsioon__pealkiri">KKK</h2>
-      <ul class="nimekiri nimekiri--kkk">
-        <li><strong>Kas see on raske?</strong> Alustamine on lihtne – põhimõtted selgeks ja edasi samm-sammult.</li>
-        <li><strong>Kaua üks õhtu kestab?</strong> Tavaliselt 1,5–2 tundi.</li>
-        <li><strong>Kas mul on partnerit vaja?</strong> Ei pea. Aitame sul partneri leida.</li>
-      </ul>
-    </div>
-
-    <div class="sektsioon sektsioon--reeglid">
-      <h2 class="sektsioon__pealkiri">Uuri reegleid</h2>
-      <p class="sektsioon__tekst">Soovid teada, kuidas mäng täpselt käib? Ava reeglite leht: 
-        <form action="./bridge_reeglid.html" method="get" class="nupp-vorm"><button class="nupp nupp--reeglid" type="submit">Bridge’i reeglid</button></form>
-      </p>
-    </div>
-    <div class="sektsioon sektsioon--ajalugu">
-       <h2 class="sektsioon__pealkiri">Kust Bridge tuli?</h2>
-        <p class="sektsioon__tekst">Vaata, kuidas whistist sai tänapäeva contract bridge: 
-       <form action="./bridge_ajalugu.html" method="get" class="nupp-vorm">
-         <button class="nupp nupp--ajalugu" type="submit">Bridge’i lühiajalugu</button>
-       </form>
-     </p>
-    </div>
-
-
   </div>
-  </div>
+
+<script>
+loadSectionsFromFile("JavaScript/info_txt/tutvustav_page.txt", [
+  "miks_proovida",
+  "uritused",
+  "demo",
+  "partner",
+  "tagasiside",
+  "kkk"
+]);
+</script>
+
 </body>
 </html>

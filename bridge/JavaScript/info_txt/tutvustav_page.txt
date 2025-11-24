@@ -1,0 +1,47 @@
+# class="pais__pealkiri" Avasta Bridge — nutikas ja seltskondlik kaardimäng
+p class="pais__alampealkiri" Õpi mõtlema nagu tiim, naudi pingelist duelli ja leia uusi sõpru. Bridge on kombinatsioon loogikast, koostööst ja heast tujust.
+p class="pais__kutse" Proovi demot · Liitu klubiga · Vaata üritusi
+
+
+## class="sektsioon__pealkiri" Miks proovida?
+- <strong>Arendab mõtlemist:</strong> loogika, tõenäosused ja meeskonnatöö.
+- <strong>Seltskondlik:</strong> leiad kiirelt uue mängukaaslase.
+- <strong>Võistlusmoment:</strong> turniirid ja reitingud soovijatele.
+
+
+## class="sektsioon__pealkiri" Tulekul üritused
+- <strong>Algajate õhtu (kolmapäeviti)</strong> – 90 min harjutusi ja mini-turniir. Tartu & Tallinn.
+- <strong>Kohvi & Kaardid (pühapäeviti)</strong> – vaba formaat, tule üksi või sõbraga.
+p class="sektsioon__markus" Vaata kalendrit või registreeru.
+
+
+## class="sektsioon__pealkiri" Proovi kohe brauseris
+p class="sektsioon__tekst" Kiire interaktiivne demo, mis tutvustab mängu kulgu. Sobib esimeseks kogemuseks.
+p class="sektsioon__kutse" Alusta demot
+
+
+## class="sektsioon__pealkiri" Leia partner
+p class="sektsioon__tekst" Jäta oma nimi ja tase – viime sind kokku samal tasemel mängijaga.
+p class="sektsioon__kutse" Täida lühivorm
+
+
+## class="sektsioon__pealkiri" Mida teised ütlevad
+- “Iga käsi on nagu väike mõistatus.” — Laura, tudeng
+- “Tulin üksi, lahkusin partneriga.” — Martin, harrastaja
+- “Parim viis argipäevast välja lülituda.” — Kadi, algaja
+
+
+## class="sektsioon__pealkiri" KKK
+- <strong>Kas see on raske?</strong> Alustamine on lihtne – põhimõtted selgeks ja edasi samm-sammult.
+- <strong>Kaua üks õhtu kestab?</strong> Tavaliselt 1,5–2 tundi.
+- <strong>Kas mul on partnerit vaja?</strong> Ei pea. Aitame sul partneri leida.
+
+
+## class="sektsioon__pealkiri" Uuri reegleid
+p class="sektsioon__tekst" Soovid teada, kuidas mäng täpselt käib? Ava reeglite leht:
+p class="sektsioon__link" [button:bridge_reeglid.html] Bridge’i reeglid
+
+
+## class="sektsioon__pealkiri" Kust Bridge tuli?
+p class="sektsioon__tekst" Vaata, kuidas whistist sai tänapäeva contract bridge:
+p class="sektsioon__link" [button:bridge_ajalugu.html] Bridge’i lühiajalugu

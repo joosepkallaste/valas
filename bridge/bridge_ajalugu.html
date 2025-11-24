@@ -5,68 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bridge’i lühiajalugu</title>
   <link rel="stylesheet" href="bridge_ajalugu.css">
+  <script src="JavaScript/functions.js"></script>
 </head>
 <body class="leht leht--ajalugu">
   <div class="page">
-  <div class="card">
+    <div class="card">
 
-    <div class="pais">
-      <h1 class="pais__pealkiri">Bridge’i lühiajalugu</h1>
-      <p class="pais__alampealkiri">Kuidas nelja mängija kaardimäng kasvas whistist maailma võistlusspordiks.</p>
+      <!-- Header -->
+      <div class="pais" id="pais">
+        <h1 class="pais__pealkiri">Bridge’i lühiajalugu</h1>
+        <p class="pais__alampealkiri">Kuidas nelja mängija kaardimäng kasvas whistist maailma võistlusspordiks.</p>
+      </div>
+
+      <!-- Sektsioonid, mis laaditakse TXT failist -->
+      <div class="sektsioon sektsioon--algus" id="algus"></div>
+      <div class="sektsioon sektsioon--auction" id="auction"></div>
+      <div class="sektsioon sektsioon--contract" id="contract"></div>
+      <div class="sektsioon sektsioon--duplicate" id="duplicate"></div>
+      <div class="sektsioon sektsioon--tana" id="tana"></div>
+
+      <!-- Nupud jäävad HTML-i -->
+      <div class="sektsioon sektsioon--nupud">
+        <form action="./tutvustav_page.html" method="get" class="nupp-vorm" style="display:inline-block;margin-right:.5rem;">
+          <button class="nupp nupp--tagasi" type="submit">← Tagasi avalehele</button>
+        </form>
+
+        <form action="./bridge_reeglid.html" method="get" class="nupp-vorm" style="display:inline-block;">
+          <button class="nupp nupp--reeglid" type="submit">Vaata reegleid</button>
+        </form>
+      </div>
+
     </div>
-
-    <div class="sektsioon sektsioon--algus">
-      <h2 class="sektsioon__pealkiri">Algus: Whist → Biritch</h2>
-      <p>
-        Bridge’i juured on 18.–19. sajandi <strong>whistis</strong>.  
-        1800. lõpul levis sellele eelkäija <em>biritch</em>, kus tekkisid
-        trumbimasti ja lepingu idee varased vormid.
-      </p>
-    </div>
-
-    <div class="sektsioon sektsioon--auction">
-      <h2 class="sektsioon__pealkiri">Auction Bridge (u 1900–1925)</h2>
-      <p>
-        20. sajandi alguses lisandus <strong>oksjon</strong> – paarid pakkusid tihide arvu ja trumbi.
-        Reeglid ei olnud veel ühtsed, kuid mängu põhistruktuur kujunes välja.
-      </p>
-    </div>
-
-    <div class="sektsioon sektsioon--contract">
-      <h2 class="sektsioon__pealkiri">Contract Bridge (alates 1925)</h2>
-      <p>
-        Harold S. <strong>Vanderbilt</strong> muutis 1925. aastal reegleid: leping loeb ainult siis,
-        kui see täidetakse; lisandusid <em>vulnerability</em> ja uus punktisüsteem.
-        Sellest sai kiiresti bridge’i ametlik vorm.
-      </p>
-    </div>
-
-    <div class="sektsioon sektsioon--duplicate">
-      <h2 class="sektsioon__pealkiri">Duplikaatbridge ja organisatsioonid</h2>
-      <p>
-        <strong>Duplicate bridge</strong> (samade jagude mängimine eri laudkondades) muutis mängu oskuspõhisemaks.
-        1930.–1950. rajati rahvuslikud liidud; 1958 loodi <strong>World Bridge Federation</strong>.
-      </p>
-    </div>
-
-    <div class="sektsioon sektsioon--tana">
-      <h2 class="sektsioon__pealkiri">Täna</h2>
-      <p>
-        Bridge’i mängitakse klubides ja online’s; see on strateegiline ja partnerlussuhteid
-        nõudev mäng, mille tuum – <strong>pakkumine, tihid ja koostöö</strong> – on püsinud muutumatuna.
-      </p>
-    </div>
-
-    <div class="sektsioon sektsioon--nupud">
-      <form action="./tutvustav_page.html" method="get" class="nupp-vorm" style="display:inline-block;margin-right:.5rem;">
-        <button class="nupp nupp--tagasi" type="submit">← Tagasi avalehele</button>
-      </form>
-
-      <form action="./bridge_reeglid.html" method="get" class="nupp-vorm" style="display:inline-block;">
-        <button class="nupp nupp--reeglid" type="submit">Vaata reegleid</button>
-      </form>
-    </div>
-
   </div>
+
+<script>
+loadSectionsFromFile("JavaScript/info_txt/bridge_ajalugu.txt", [
+  "algus",
+  "auction",
+  "contract",
+  "duplicate",
+  "tana"
+]);
+</script>
+
 </body>
 </html>

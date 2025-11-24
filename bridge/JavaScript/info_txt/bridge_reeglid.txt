@@ -1,0 +1,37 @@
+# class="pealkiri" Bridge’i lihtne selgitus
+p class="sissejuhatus" Bridge on nelja mängija mäng, kus mängitakse ||paarides||: sina + su partner vs teised kaks.
+
+## class="kaart__pealkiri" Mängijad & paarid
+p class="kaart__tekst" 4 mängijat, partnerid istuvad vastamisi.
+- 52-kaardine pakk
+- Kaardijärjestus: A K Q J 10 9 8 7 6 5 4 3 2
+- Mastid: ♠ ♥ ♦ ♣
+
+## class="kaart__pealkiri" Mängu ülesehitus
+p class="kaart__tekst" Mäng koosneb kahest osast: ||pakkumine|| ja ||mängimine||.
+- Pakkumises lubate mitu tihi teie paar võtab ja valite ||trumbi|| või ||ilma trumpita (NT)||
+- Mängimises püütakse lubatud tihid ära võtta
+
+## class="kaart__pealkiri" Eesmärk
+p class="kaart__tekst" Täitke leping: võtke vähemalt nii palju tihi, kui lubasite.
+p class="kaart__tekst" Näide: ||4♠|| ⇒ 6 (baas) + 4 = ||10 tihi|| vaja
+
+## class="sektsioon__pealkiri" 1. Pakkumine (oksjon)
+- Igaüks ütleb kordamööda pakkumise, nt ||1♥|| või ||3NT||
+- Pass = jätad vahele; pead pakkuma eelmisest kõrgemalt
+- Kolme järjestikuse PASS järel lõpeb pakkumine
+p class="sektsioon__tekst" Viimane pakkumine = leping, mida teie paar peab täitma
+
+## class="sektsioon__pealkiri" 2. Mängimine (tihid)
+- Mängija (declarer) mängib; tema partner on laud (dummy) ja paneb kaardid lauale
+- Vasakul käel olev vastane alustab esimese kaardiga (avaaristus)
+- Pea järgima sama masti. Kui ei saa, tohib panna mis tahes kaardi (ka trumpi)
+- Tihi võidab kõrgeim sama masti kaart või, kui keegi pani trumpi, siis kõrgeim trump
+
+## class="sektsioon__esiletost" Leping täidetud, kui võtate vähemalt lubatud tihid
+p class="sektsioon__tekst" Ei täitnud? Lähte miinusesse (vastased saavad punkte). Scorimine võib erineda (duplicate, rubber), aga alguses piisab, kui eesmärk on lepingu täitmine
+
+## class="sektsioon__pealkiri" Soovid edasi õppida?
+- Võin anda ||näidiskäe|| ja mängida selle koos läbi
+- Võin õpetada ||pakkumise põhireegleid|| (nt 1NT, avangud, vastused)
+- Võin teha ||minikontrolli|| lühikeste küsimustega
