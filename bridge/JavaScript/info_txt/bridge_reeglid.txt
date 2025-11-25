@@ -32,6 +32,5 @@ p class="sektsioon__tekst" Viimane pakkumine = leping, mida teie paar peab täit
 p class="sektsioon__tekst" Ei täitnud? Lähte miinusesse (vastased saavad punkte). Scorimine võib erineda (duplicate, rubber), aga alguses piisab, kui eesmärk on lepingu täitmine
 
 ## class="sektsioon__pealkiri" Soovid edasi õppida?
-- Võin anda ||näidiskäe|| ja mängida selle koos läbi
-- Võin õpetada ||pakkumise põhireegleid|| (nt 1NT, avangud, vastused)
-- Võin teha ||minikontrolli|| lühikeste küsimustega
+- Tutvu ||ajalooga|| 
+- Leia ||sõpru|| kellega harjutada
