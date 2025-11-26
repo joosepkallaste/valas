@@ -8,15 +8,19 @@ body {
   background-attachment: fixed; /* scrollimiseks */
 }
 
-/* õrn tume kiht loetavuseks */
+/* Lisas Armin */
+body {
+    cursor: url("Pildid/cursor/Card_Normal.cur"), auto;
+}
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.35);
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
 }
-
 .page {
   min-height: 100vh;
   display: flex;

@@ -1,8 +1,3 @@
-# class="pais__pealkiri" Avasta Bridge — nutikas ja seltskondlik kaardimäng
-p class="pais__alampealkiri" Õpi mõtlema nagu tiim, naudi pingelist duelli ja leia uusi sõpru. Bridge on kombinatsioon loogikast, koostööst ja heast tujust.
-p class="pais__kutse" Proovi mängida, liitu mänguga, Vaata üritusi
-
-
 ## class="sektsioon__pealkiri" Miks proovida?
 - <strong>Arendab mõtlemist:</strong> loogika, tõenäosused ja meeskonnatöö.
 - <strong>Seltskondlik:</strong> leiad kiirelt uue mängukaaslase.

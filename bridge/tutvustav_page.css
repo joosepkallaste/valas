@@ -8,13 +8,18 @@ body {
   background-attachment: fixed; /* scrollimiseks */
 }
 
-/* õrn tume kiht loetavuseks */
+/* Lisas Armin */
+body {
+    cursor: url("Pildid/cursor/Card_Normal.cur"), auto;
+}
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.35);
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .page {
@@ -57,7 +62,6 @@ header {
   border: 2px solid #444;
   border-radius: 6px;
   background: white;
-  cursor: pointer;
   font-size: 16px;
 }
 /* hõljumis lisa */
