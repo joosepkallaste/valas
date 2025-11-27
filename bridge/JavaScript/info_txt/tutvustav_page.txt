@@ -6,15 +6,12 @@
 ## class="sektsioon__pealkiri" Tulekul üritused
 - <strong>Algajate õhtu (kolmapäeviti):</strong> õppimine, juhendamine ja mini-turniir – ideaalne esimene samm.
 - <strong>Kohvi & Kaardid (pühapäeviti):</strong> sõbralik vaba formaat, kuhu on oodatud kõik tasemed.
-p class="sektsioon__markus" Vaata kalendrit või registreeru, kohtade arv on piiratud.
 
 ## class="sektsioon__pealkiri" Proovi veebis
 p class="sektsioon__tekst" Interaktiivne demoversioon näitab, kuidas pakkumine, tihid ja mängukäik omavahel toimivad – ilma midagi installimata.
-p class="sektsioon__kutse" Alusta interaktiivset demot
 
 ## class="sektsioon__pealkiri" Leia mängupartner
 p class="sektsioon__tekst" Otsid kedagi, kellega koos mängida või harjutada? Jäta oma kontakt – seome sind sama taseme huvilisega.
-p class="sektsioon__kutse" Täida partneriotsingu vorm
 
 ## class="sektsioon__pealkiri" Kogemused mängijatelt
 - “Iga käsi on nagu uus mõistatus — sõltuvust tekitav.” — Laura

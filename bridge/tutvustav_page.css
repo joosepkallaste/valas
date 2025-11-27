@@ -80,11 +80,11 @@ header.pais {
 }
 
 .menu-btn {
-  padding: 12px 26px;
+  padding: 12px 90px;
   background: rgba(255,255,255,0.92);
   color: #000;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
