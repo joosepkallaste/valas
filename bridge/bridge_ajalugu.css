@@ -114,6 +114,10 @@ header {
   margin: 32px 0 40px 0;  /* rohkem õhku pealkirja ja sisu vahel */
 }
 
+/* Armini lisatud - ei lase teksti valida */
+* {
+  user-select: none;
+}
 .menu-btn {
   padding: 12px 90px;
   background: rgba(255,255,255,0.92);
