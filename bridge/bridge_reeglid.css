@@ -44,3 +44,8 @@ header {
   text-transform: uppercase;
   font-size: 12px;
 }
+
+/* Armini lisatud - ei lase teksti valida */
+* {
+  user-select: none;
+}

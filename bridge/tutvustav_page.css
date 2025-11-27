@@ -68,3 +68,8 @@ header {
 .menu-btn:hover {
   background: #f1f1f1;
 }
+
+/* Armini lisatud - ei lase teksti valida */
+* {
+  user-select: none;
+}
