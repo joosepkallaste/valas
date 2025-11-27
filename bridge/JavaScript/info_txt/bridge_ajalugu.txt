@@ -1,15 +1,19 @@
 # class="sektsioon__pealkiri" Algus: Whist → Biritch
-p class="sektsioon__tekst" Bridge’i juured on 18.–19. sajandi ||whistis||.
-p class="sektsioon__tekst" 1800. lõpul levis sellele eelkäija ||biritch||, kus tekkisid trumbimasti ja lepingu idee varased vormid.
+p class="sektsioon__tekst" Bridge’i ajalugu algab 17.–18. sajandist, mil Inglismaal mängiti whisti – mängu, mille keskmes olid tihid, partnerlussuhted ja strateegiline mänguviis. See oli ülemklasside seas populaarne ning kujunes sajanditega aina sügavamaks mõttemänguks.
+p class="sektsioon__tekst" 1800. aastate lõpus kujunes whistist välja selle otsene eelkäija biritch (mõnikord „Russian Whist“). Biritch tõi mängu kaks olulist uuendust: trumbimasti valimise ja lepingu kontseptsiooni algkuju. Need ideed lõid aluse moodsa bridge’i loogikale.
 
 # class="sektsioon__pealkiri" Auction Bridge (u 1900–1925)
-p class="sektsioon__tekst" 20. sajandi alguses lisandus ||oksjon|| – paarid pakkusid tihide arvu ja trumbi. Reeglid ei olnud veel ühtsed, kuid mängu põhistruktuur kujunes välja.
+p class="sektsioon__tekst" 20. sajandi alguseks arenes biritchist Auction Bridge – mäng, kus lisandus oksjon: paarid pakkusid, mitu tihi suudavad võtta ja mis masti trumpina kasutada. Pakkumine muutus strateegiliseks, kuid reeglid olid riigiti erinevad.
+p class="sektsioon__tekst" Auction Bridge’i perioodil kujunes välja enamik sellest, mida tänapäeval peame bridge’i põhielementideks – partneri käe hindamine, pakkumisloogika ja esimesed süsteemsed konventsioonid.
 
 # class="sektsioon__pealkiri" Contract Bridge (alates 1925)
-p class="sektsioon__tekst" Harold S. ||Vanderbilt|| muutis 1925. aastal reegleid: leping loeb ainult siis, kui see täidetakse; lisandusid ||vulnerability|| ja uus punktisüsteem. Sellest sai kiiresti bridge’i ametlik vorm.
+p class="sektsioon__tekst" Murrang toimus 1925. aastal, kui Harold S. Vanderbilt lõi Contract Bridge’i. Tema uuendused muutsid mängu täielikult: leping loeb ainult siis, kui see päriselt täidetakse; lisandusid vulnerability (haavatavus), dubleerimise loogika ja uus punktisüsteem.
+p class="sektsioon__tekst" Contract Bridge vallutas kiiresti maailma ning sellest sai rahvusvaheline standard, mida mängitakse tänaseni.
 
 # class="sektsioon__pealkiri" Duplikaatbridge ja organisatsioonid
-p class="sektsioon__tekst" ||Duplicate bridge|| (samade jagude mängimine eri laudkondades) muutis mängu oskuspõhisemaks. 1930.–1950. rajati rahvuslikud liidud; 1958 loodi ||World Bridge Federation||.
+p class="sektsioon__tekst" 1930.–1950. aastatel kujunes välja duplicate bridge – formaat, kus kõik mängijad mängivad samu jagusid ning tulemusi võrreldakse laudkondade vahel. See muutis bridge’i veelgi oskuspõhisemaks, sest õnn mängib palju väiksemat rolli.
+p class="sektsioon__tekst" Sel perioodil loodi rahvuslikud bridge’i liidud. 1958. aastal asutati World Bridge Federation (WBF), mis ühtlustas rahvusvahelised reeglid ja hakkas korraldama maailmameistrivõistlusi.
 
 # class="sektsioon__pealkiri" Täna
-p class="sektsioon__tekst" Bridge’i mängitakse klubides ja online’s; see on strateegiline ja partnerlussuhteid nõudev mäng, mille tuum – ||pakkumine, tihid ja koostöö|| – on püsinud muutumatuna.
+p class="sektsioon__tekst" Tänapäeval mängitakse bridge’i nii klubides kui online keskkondades. Funbridge, BBO ja teised platvormid on muutnud mängu globaalseks ja ligipääsetavaks. Suurturniirid, reaalajas analüüs, konventsioonid ja digitaalsed treeningud on muutnud bridge’i kaasaegseks mõttespordiks.
+p class="sektsioon__tekst" Kuigi tehnoloogia on muutunud, jääb mängu tuum samaks: pakkumine, tihid ja koostöö partneriga – need põhimõtted on kandnud bridge’i läbi enam kui kahe sajandi.
