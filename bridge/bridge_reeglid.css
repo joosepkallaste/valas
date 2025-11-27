@@ -1,3 +1,6 @@
+/* -------------------------------------------------------
+   TAUST JA ÜLDINE LEHE STIIL
+------------------------------------------------------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,12 +8,8 @@ body {
   background-image: url("Pildid/Backround1.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* scrollimiseks */
-}
-
-/* Lisas Armin */
-body {
-    cursor: url("Pildid/cursor/Card_Normal.cur"), auto;
+  background-attachment: fixed;
+  cursor: url("Pildid/cursor/Card_Normal.cur"), auto;
 }
 
 body::before {
@@ -21,26 +20,176 @@ body::before {
   z-index: 0;
   pointer-events: none;
 }
+
+/* -------------------------------------------------------
+   LEHE PAIGUTUS
+------------------------------------------------------- */
 .page {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 24px;
+  padding: 28px;
+  position: relative;
+  z-index: 1;
 }
 
+/* -------------------------------------------------------
+   PÕHIKAART (peamine konteiner)
+------------------------------------------------------- */
 .card {
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(6px);
-  padding: 24px;
-  max-width: 900px;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  background: rgba(30,30,30,0.55); /* NÄHTAV TAUST, TUME, LOETAV */
+  backdrop-filter: blur(12px);
+  padding: 28px 32px;
+  max-width: 820px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 12px 45px rgba(0,0,0,0.35);
+  color: #fff;
 }
 
-header {
-  border-bottom: 1px solid #fbf8f8;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
+/* -------------------------------------------------------
+   PÄIS
+------------------------------------------------------- */
+header.pais {
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 12px;
+  opacity: 0.8;
+  color: #eaeaea;
+}
+
+/* -------------------------------------------------------
+   PEALKIRI JA SISSEJUHATUS
+------------------------------------------------------- */
+.pealkiri {
+  font-size: 28px;         /* väiksem ja elegantselt kompaktne */
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #fff;
+  text-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.sissejuhatus {
+  font-size: 17px;
+  line-height: 1.55;
+  margin-bottom: 25px;
+  color: #e7e7e7;
+}
+
+/* -------------------------------------------------------
+   RUUDUSTIK (3 veeruga)
+------------------------------------------------------- */
+.ruudustik--3veeru {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* -------------------------------------------------------
+   KAARDID (põhialused, ülesehitus, eesmärk)
+------------------------------------------------------- */
+.kaart {
+  background: rgba(40,40,40,0.45);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 16px 18px;
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.kaart__pealkiri {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.kaart__tekst {
+  font-size: 15.5px;
+  color: #e4e4e4;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+/* -------------------------------------------------------
+   SUURED SEKTSIOONID (oksjon, mäng, leping, õpe)
+------------------------------------------------------- */
+.sektsioon {
+  margin-top: 32px;
+  padding: 22px 26px;
+  background: rgba(40,40,40,0.45);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+}
+
+.sektsioon__pealkiri {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.sektsioon__esiletost {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffd27d;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.sektsioon__tekst {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ececec;
+}
+
+/* -------------------------------------------------------
+   LOENDID
+------------------------------------------------------- */
+ul, li {
+  color: #e7e7e7;
+  padding-left: 20px;
+  margin-bottom: 6px;
+  font-size: 15.5px;
+}
+
+/* -------------------------------------------------------
+   TAGASI-NUPP
+------------------------------------------------------- */
+.nupp-vorm {
+  display: inline-block;
+}
+
+.nupp--tagasi {
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.85);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-top: 12px;
+}
+
+.nupp--tagasi:hover {
+  background: #ffd27d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Peida tühjad klaasikastid */
+.sektsioon:empty,
+.kaart:empty {
+  display: none;
 }
