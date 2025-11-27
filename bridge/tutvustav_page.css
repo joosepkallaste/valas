@@ -1,6 +1,4 @@
-/* -------------------------------------------------------
-   TAUST
-------------------------------------------------------- */
+/*TAUST*/
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -21,9 +19,7 @@ body::before {
   z-index: 0;
 }
 
-/* -------------------------------------------------------
-   PAIGUTUS
-------------------------------------------------------- */
+/*PAIGUTUS*/
 .page {
   min-height: 100vh;
   display: flex;
@@ -48,9 +44,7 @@ body::before {
   color: #fff;
 }
 
-/* -------------------------------------------------------
-   PÄIS
-------------------------------------------------------- */
+/*PÄIS*/
 header.pais {
   border-bottom: 2px solid rgba(255,255,255,0.2);
   padding-bottom: 12px;
@@ -76,10 +70,7 @@ header.pais {
   margin-top: 4px;
 }
 
-/* -------------------------------------------------------
-   ILUSAD ÜLEMISED NUPUD
-------------------------------------------------------- */
-/* Ülemine menüü container – ilus spacing ja ideaalne tsentreerimine  */
+/*ILUSAD ÜLEMISED NUPUD*/
 .top-menu {
   display: flex;
   justify-content: center;
@@ -88,7 +79,6 @@ header.pais {
   margin: 32px 0 40px 0;  /* rohkem õhku pealkirja ja sisu vahel */
 }
 
-/* Menüü nupud – ühtsed, ilusad, modernsed */
 .menu-btn {
   padding: 12px 26px;
   background: rgba(255,255,255,0.92);
@@ -110,7 +100,6 @@ header.pais {
   box-shadow: 0 6px 16px rgba(0,0,0,0.32);
 }
 
-/* Kui tahad mobiilis ühe all teist */
 @media (max-width: 600px) {
   .top-menu {
     flex-direction: column;
@@ -119,9 +108,7 @@ header.pais {
 }
 
 
-/* -------------------------------------------------------
-   SEKTSIOONID
-------------------------------------------------------- */
+/*SEKTSIOONID*/
 .sektsioon {
   margin-bottom: 28px;
 }
@@ -143,9 +130,6 @@ header.pais {
   margin-bottom: 10px;
 }
 
-/* -------------------------------------------------------
-   ÜLEJÄÄNUD NUPUD (reeglid/ajalugu alt) — ÜHTSED
-------------------------------------------------------- */
 .nupp {
   display: inline-block;
   padding: 10px 20px;
@@ -168,7 +152,6 @@ header.pais {
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
-/* Vormide vahed */
 .nupp-vorm {
   display: inline-block;
   margin-top: 10px;
