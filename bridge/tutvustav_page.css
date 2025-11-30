@@ -170,3 +170,32 @@ header.pais {
 .sektsioon:empty {
   display: none;
 }
+.bot-menu-btn {
+  padding: 10px 8px;
+  background: rgba(255,255,255,0.92);
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: 0.25s ease;
+}
+
+.bot-menu-btn:hover {
+  background: #f1f1f1;
+}
+
+/* Armini lisatud - ei lase teksti valida */
+* {
+  user-select: none;
+}
+
+.bot-menu-btn:hover {
+  background: #ffd27d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.32);
+}
