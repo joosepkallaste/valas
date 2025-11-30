@@ -1,0 +1,355 @@
+/*
+  --------------------------------------------
+  Autorid: Jon Kristof Aasmäe, Joosep-Gre Kallaste, Armin Kull 
+  Ajaperiood: 01.11 – 31.11  
+  Dokumentatsiooniallikad: W3Schools  
+  --------------------------------------------
+  See skript kujundab tervet veebilehte. Enamuse kirjutas Jon Kristof Aasmäe, Joosep-Gre Kallaste ja Armin Kull lisasid ka paar rida.
+/
+
+/*TAUST*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background-image: url("Pildid/Backround1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: url("Pildid/cursor/Card_Normal.cur"), auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/*PAIGUTUS*/
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+/* -------------------------------------------------------
+   KLAASKAART
+------------------------------------------------------- */
+.card {
+  background: rgba(30,30,30,0.55);
+  backdrop-filter: blur(12px);
+  padding: 32px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 12px 45px rgba(0,0,0,0.35);
+  color: #fff;
+}
+
+/*PÄIS*/
+header.pais {
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.pais__pealkiri {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.pais__alampealkiri {
+  font-size: 17px;
+  opacity: 0.95;
+  line-height: 1.55;
+  margin-bottom: 6px;
+}
+
+.pais__kutse {
+  opacity: 0.85;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+/*ILUSAD ÜLEMISED NUPUD*/
+.top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;              /* ilusa vahega */
+  margin: 32px 0 40px 0;  /* rohkem õhku pealkirja ja sisu vahel */
+}
+
+.menu-btn {
+  padding: 12px 90px;
+  background: rgba(255,255,255,0.92);
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: 0.25s ease;
+}
+
+.menu-btn:hover {
+  background: #f1f1f1;
+}
+
+/* Viide 3 - ei lase teksti valida */
+* {
+  user-select: none;
+}
+
+.menu-btn:hover {
+  background: #ffd27d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.32);
+}
+
+@media (max-width: 600px) {
+  .top-menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
+/*SEKTSIOONID*/
+.sektsioon {
+  margin-bottom: 28px;
+}
+
+.sektsioon__pealkiri {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 26px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.sektsioon__tekst,
+.sektsioon__markus,
+.sektsioon__kutse {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #e8e8e8;
+  margin-bottom: 10px;
+}
+
+.nupp {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  white-space: nowrap;
+}
+
+.nupp:hover {
+  background: #ffd27d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.nupp-vorm {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Peida tühjad sektsioonid */
+.sektsioon:empty {
+  display: none;
+}
+.bot-menu-btn {
+  padding: 10px 8px;
+  background: rgba(255,255,255,0.92);
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: 0.25s ease;
+}
+
+.bot-menu-btn:hover {
+  background: #f1f1f1;
+}
+
+/* Armini lisatud - ei lase teksti valida */
+
+.bot-menu-btn:hover {
+  background: #ffd27d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.32);
+}
+
+/*LEHE PAIGUTUS*/
+
+/*PÕHIKAART (peamine konteiner)*/
+.card { /* NÄHTAV TAUST, TUME, LOETAV */
+  padding: 28px 32px;
+  max-width: 820px;
+}
+
+/*PÄIS*/
+header.pais {
+  padding-bottom: 10px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: #eaeaea;
+}
+
+/*PEALKIRI JA SISSEJUHATUS */
+.pealkiri {
+  font-size: 28px;      
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 14px;
+  text-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.sissejuhatus {
+  margin-bottom: 25px;
+  color: #e7e7e7;
+}
+
+/*RUUDUSTIK (3 veeruga)*/
+.ruudustik--3veeru {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/*KAARDID (põhialused, ülesehitus, eesmärk)*/
+.kaart {
+  background: rgba(40,40,40,0.45);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 16px 18px;
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.kaart__pealkiri {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.kaart__tekst {
+  font-size: 15.5px;
+  color: #e4e4e4;
+  margin-bottom: 8px;
+}
+
+/*SUURED SEKTSIOONID (oksjon, mäng, leping, õpe)*/
+.sektsioon {
+  margin-top: 32px;
+  padding: 22px 26px;
+  background: rgba(40,40,40,0.45);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+}
+
+.sektsioon__pealkiri {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.sektsioon__esiletost {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffd27d;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.sektsioon__tekst {
+  line-height: 1.6;
+  color: #ececec;
+}
+
+/*LOENDID*/
+ul, li {
+  color: #e7e7e7;
+  padding-left: 20px;
+  margin-bottom: 6px;
+  font-size: 15.5px;
+}
+
+/*TAGASI-NUPP*/
+
+.nupp--tagasi {
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.85);
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.25s ease;
+  margin-top: 12px;
+}
+
+.nupp--tagasi:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Peida tühjad klaasikastid */
+.sektsioon:empty,
+.kaart:empty {
+  display: none;
+}
+
+
+/*PÕHINE SISUKONTEINER (klaasefekt)*/
+
+/*PÄIS*/
+header {
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: #eaeaea;
+}
+
+/*SEKSIOONIDE PEALKIRJAD*/
+
+/*SEKSIOONIDE TEKST*/
+.sektsioon__tekst {
+  max-width: 95%;
+}
+
+@media (max-width: 600px) {
+}
