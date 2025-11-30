@@ -182,7 +182,7 @@ ul, li {
   margin: 32px 0 40px 0;  /* rohkem õhku pealkirja ja sisu vahel */
 }
 
-/* Armini lisatud - ei lase teksti valida */
+/* Viide 3 - ei lase teksti valida */
 * {
   user-select: none;
 }

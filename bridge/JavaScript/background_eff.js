@@ -1,3 +1,18 @@
+/*  
+  --------------------------------------------
+  Autor: Armin Kull  
+  Ajaperiood: 01.11 – 31.11  
+  Dokumentatsiooniallikad: StackOverflow, W3Schools, DevDocs  
+  --------------------------------------------
+  See skript loob taustale visuaalse efekti, kus kasutaja klõpsu asukohta
+  ilmuvad juhuslikud kaardipildid, mis triivivad ülespoole ja hajuvad.
+  Efekt ignoreerib interaktiivseid elemente (nupud, lingid, sisendväljad).
+*/
+
+
+// --------------------------------------------
+// Kaardipiltide nimekiri (kõik võimalikud variandid)
+// --------------------------------------------
 const images = [
   'Pildid/background_eff/kaardid/2_of_clubs.png',
   'Pildid/background_eff/kaardid/2_of_diamonds.png',
@@ -68,97 +83,121 @@ const images = [
   'Pildid/background_eff/kaardid/red_joker.png'
 ];
 
+
+// --------------------------------------------
+// Piltide eellaadimine, et animatsioon oleks sujuv
+// --------------------------------------------
 const preloaded = [];
 images.forEach((src) => {
   const img = new Image();
   img.src = src;
+
+  // Kui pilt ei lae, logime hoiatuse
   img.onerror = () => console.warn('Failed to load background image:', src);
+
   preloaded.push(img);
 });
 
-const MAX_CONCURRENT = 30; // safeguard to avoid DOM overload
+
+// Maksimaalne lubatud üheaegsete piltide arv
+const MAX_CONCURRENT = 30;
 let currentCount = 0;
 
+
+// --------------------------------------------
+// Funktsioon, mis loob pildi ja käivitab juhusliku animatsiooni
+// --------------------------------------------
 function createFloatingImage(x, y) {
-  if (currentCount >= MAX_CONCURRENT) return; // skip if too many
+  // Kui liiga palju elemente juba ekraanil, katkestame
+  if (currentCount >= MAX_CONCURRENT) return;
+
   currentCount++;
 
+  // Luuakse <img> element
   const img = document.createElement('img');
+
+  // Valime juhusliku kaardipildi
   img.src = images[Math.floor(Math.random() * images.length)];
   img.className = 'background-png';
 
-  // place center of image at the pointer
+  // Pildi paigutamine hiireklõpsu keskele
   img.style.left = x + 'px';
   img.style.top = y + 'px';
 
-  // random starting scale & rotation
-  const startScale = 0.6 + Math.random() * 0.6; // 0.6 - 1.2
+  // Algussuurus ja algpööramine
+  const startScale = 0.6 + Math.random() * 0.6;  
   const startRotate = Math.random() * 360;
+
   img.style.transform = `translate(-50%, -50%) scale(${startScale}) rotate(${startRotate}deg)`;
   img.style.opacity = '1';
 
+  // Lisame pildi DOM-i
   document.body.appendChild(img);
 
-  // ensure next frame before starting transition
+  // Käivitame animatsiooni järgmisel kaadril
   requestAnimationFrame(() => {
-    // choose an end position offset so it drifts (random direction)
-    const dx = (Math.random() - 0.5) * 300; // px
-    const dy = -50 - Math.random() * 200; // mostly upward
+    // Lõppasukoha (drift) juhuslik vektor
+    const dx = (Math.random() - 0.5) * 300;
+    const dy = -50 - Math.random() * 200;
 
     const endScale = Math.max(0.2, startScale * (0.15 + Math.random() * 0.25));
     const endRotate = startRotate + (Math.random() * 80 - 40);
 
-    // we put translateX/Y in px by composing translate then translate(-50%,-50%).
-    // CSS transform order: translate(px,px) translate(-50%,-50%) scale() rotate()
-    img.style.transform = `translate(${dx}px, ${dy}px) translate(-50%, -50%) scale(${endScale}) rotate(${endRotate}deg)`;
+    img.style.transform = 
+      `translate(${dx}px, ${dy}px) translate(-50%, -50%) scale(${endScale}) rotate(${endRotate}deg)`;
+
+    // Pilt hajub
     img.style.opacity = '0';
   });
 
-  // remove when transition finishes (or fallback after 2s)
+  // --------------------------------------------
+  // Elemendi eemaldamine animatsiooni lõpus
+  // --------------------------------------------
   const cleanup = () => {
     if (img.parentNode) img.parentNode.removeChild(img);
     currentCount = Math.max(0, currentCount - 1);
   };
 
-  const onTransitionEnd = (ev) => {
-    // ensure we only remove once (when opacity or transform finished)
+  const onTransitionEnd = () => {
     cleanup();
     img.removeEventListener('transitionend', onTransitionEnd);
   };
 
   img.addEventListener('transitionend', onTransitionEnd);
 
-  // fallback cleanup in case transitionend doesn't fire
-  const fallbackTimer = setTimeout(() => {
-    if (img.parentNode) cleanup();
-    clearTimeout(fallbackTimer);
-  }, 2000);
+  // Tagavara puhastus (kui transitionend ei käivitu)
+  setTimeout(cleanup, 2000);
 }
 
-// Helper to ignore interactive elements
+
+// --------------------------------------------
+// Kontroll, kas klõps toimus interaktiivsel elemendil
+// --------------------------------------------
 function isInteractiveTarget(target) {
   return !!target.closest('button, a, input, textarea, select, label, [data-no-background]') ||
          !!target.closest('.menu-btn, .nupp');
 }
 
-// attach after DOM ready
+
+// --------------------------------------------
+// Efekti init käivitamine lehe laadimisel
+// --------------------------------------------
 function initBackgroundEffect() {
-  // If you want clicks only outside ".card", change the condition below.
   document.addEventListener('pointerdown', (e) => {
-    // ignore right-click / ctrl-click (optional)
+    // Lubame ainult vasakklõpsu
     if (e.button !== 0) return;
 
+    // Interaktiivsed elemendid ei käivita efekti
     if (isInteractiveTarget(e.target)) return;
 
-    // get viewport coordinates
-    const x = e.clientX;
-    const y = e.clientY;
-
-    createFloatingImage(x, y);
+    createFloatingImage(e.clientX, e.clientY);
   }, { passive: true });
 }
 
-// If script is loaded in head, wait for DOM; if already loaded, init immediately
+
+// --------------------------------------------
+// Käivitame efekti, kui DOM on valmis
+// --------------------------------------------
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initBackgroundEffect);
 } else {
